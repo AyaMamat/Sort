@@ -5,11 +5,12 @@ public class Merge_sort {
     public static void main( String args[] ) {
         int[] arr = {6,99,8,3,78,56,31};
 
+        System.out.println("Original Array:");
+        printArray(arr);
         mergeSort(arr);
+        System.out.println("\nSorted Array:");
+        printArray(arr);
 
-        for(int i = 0;i<arr.length;i++) {
-            System.out.println(arr[i]+" ");
-        }
     }
 
     private static void mergeSort(int[] arr) {
@@ -70,5 +71,11 @@ public class Merge_sort {
 
         }
 
+    }
+    public static void printArray(int[] arr) {
+        for (int value : arr) {
+            System.out.print(value + " ");
+        }
+        System.out.println();
     }
 }
